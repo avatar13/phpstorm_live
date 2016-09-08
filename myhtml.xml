@@ -1,0 +1,35 @@
+<templateSet group="myhtml">
+  <template name="=" value="&lt;?= $VAR$ ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="phpVar" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="form" value="&lt;? $form = ActiveForm::begin([&#10;    &quot;options&quot; =&gt; [&#10;        &quot;id&quot; =&gt; &quot;&quot;,&#10;        &quot;class&quot; =&gt; &quot;well&quot;,        &#10;    ],&#10;]); ?&gt;&#10;&#10;    &lt;div class=&quot;form-group&quot;&gt;&#10;&#9;    &lt;?= Html::submitButton(&quot;Отправить&quot;, [&quot;class&quot; =&gt; &quot;btn btn-primary&quot;]) ?&gt;&#10;&#9;&lt;/div&gt;  &#10;&#10;&lt;? ActiveForm::end(); ?&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ha" value="&lt;?= Html::a('$END$', [''], ['class' =&gt; '']) ?&gt;" description="Html::a" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="if" value="&lt;? if ($CONDITION$): ?&gt;&#10;    $END$&#10;&lt;? endif; ?&gt;" description="&lt;? if (): ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="foreach" value="&lt;? foreach ($CONDITION$): ?&gt;&#10;    $END$&#10;&lt;? endforeach; ?&gt;" description="&lt;? foreach (): ?&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
