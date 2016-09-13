@@ -42,4 +42,12 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="getSmth" value="$smth$Data = Yii::$app-&gt;$smthb$-&gt;$smthf$($smth$Id);&#10;if (!$smth$Data)&#10;    return Yii::$app-&gt;system-&gt;redirect(Url::toRoute([]), );" toReformat="false" toShortenFQNames="true">
+    <variable name="smth" expression="snakeCase(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="smthb" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="smthf" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>
