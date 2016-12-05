@@ -1,9 +1,4 @@
 <templateSet group="PHP">
-  <template name="out" value="Yii::$app-&gt;system-&gt;out($END$, 1);" description="" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
   <template name="query" value="Yii::$app-&gt;db-&gt;createCommand('$END$')-&gt;execute();" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
@@ -46,11 +41,6 @@
     <variable name="smth" expression="snakeCase(String)" defaultValue="" alwaysStopAt="true" />
     <variable name="smthb" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="smthf" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="ftrans" value="Fn::ext()-&gt;db-&gt;transaction();&#10;try&#10;{&#10;    $END$&#10;    Fn::ext()-&gt;db-&gt;commit();&#10;}&#10;catch (FDbException $e)&#10;{&#10;    Fn::ext()-&gt;db-&gt;rollback();&#10;    throw $e;&#10;}" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
