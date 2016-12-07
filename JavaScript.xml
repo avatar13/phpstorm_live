@@ -33,7 +33,7 @@
     <variable name="MODULE_VAR" expression="jsDefineParameter(MODULE_REF)" defaultValue="mod" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="ajax" value="$.ajax({&#10;    url: &quot;&quot;,&#10;    data: &quot;&quot;,&#10;    success: function (response) {&#10;        if (response.error) {&#10;            fusion.alert({&#10;                text: response.error&#10;            });&#10;            return;&#10;        }&#10;    &#10;        $END$&#10;    },&#10;    beforeSend: function() { fusion.showLoader(); },&#10;    complete: function() { fusion.hideLoader(); }&#10;});" toReformat="false" toShortenFQNames="true">
+  <template name="ajaxy" value="$.ajax({&#10;    url: &quot;&quot;,&#10;    data: &quot;&quot;,&#10;    success: function (response) {&#10;        if (response.error) {&#10;            fusion.alert({&#10;                text: response.error&#10;            });&#10;            return;&#10;        }&#10;    &#10;        $END$&#10;    },&#10;    beforeSend: function() { fusion.showLoader(); },&#10;    complete: function() { fusion.hideLoader(); }&#10;});" description="yii2" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />

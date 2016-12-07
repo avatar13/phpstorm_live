@@ -9,4 +9,12 @@
       <option name="PHP" value="true" />
     </context>
   </template>
+  <template name="ajaxf" value="$.ajax({&#10;    url: &quot;&quot;,&#10;    data: &quot;&quot;,&#10;    success: function (response) {&#10;        if (response.message) {&#10;            fusion.alert({&#10;                text: response.message&#10;            });&#10;            return;&#10;        }&#10;    &#10;        $END$&#10;    },&#10;    beforeSend: function() { fusion.showLoader(); },&#10;    complete: function() { fusion.hideLoader(); }&#10;});" description="Fusion" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
