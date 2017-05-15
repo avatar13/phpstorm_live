@@ -32,4 +32,10 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="modal" value="&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; role=&quot;dialog&quot;&gt;&#10;&#9;&lt;div class=&quot;modal-dialog&quot;&gt;&#10;&#10;&#9;&#9;&lt;!-- Modal content--&gt;&#10;&#9;&#9;&lt;div class=&quot;modal-content&quot;&gt;&#10;&#9;&#9;&#9;&lt;div class=&quot;modal-header&quot;&gt;&#10;&#9;&#9;&#9;&#9;&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;&#10;&#9;&#9;&#9;&#9;&lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;&#10;&#9;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&#9;&lt;div class=&quot;modal-body&quot;&gt;&#10;&#9;&#9;&#9;&#9;&lt;p&gt;Some text in the modal.&lt;/p&gt;&#10;&#9;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&#9;&lt;div class=&quot;modal-footer&quot;&gt;&#10;&#9;&#9;&#9;&#9;&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;&#10;&#9;&#9;&#9;&lt;/div&gt;&#10;&#9;&#9;&lt;/div&gt;&#10;&#10;&#9;&lt;/div&gt;&#10;&lt;/div&gt;" description="Bootstrap Modal" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
