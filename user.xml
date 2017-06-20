@@ -15,6 +15,8 @@
     </context>
   </template>
   <template name="out" value="Yii::app()-&gt;System-&gt;out($END$, 1);" toReformat="false" toShortenFQNames="true">
-    <context />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
   </template>
 </templateSet>
