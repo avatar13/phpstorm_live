@@ -9,9 +9,12 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="out" value="Yii::$app-&gt;system-&gt;out($END$, 1);" description="" toReformat="false" toShortenFQNames="true">
+  <template name="yout" value="Yii::$app-&gt;system-&gt;out($END$, 1);" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
+  </template>
+  <template name="out" value="Yii::app()-&gt;System-&gt;out($END$, 1);" toReformat="false" toShortenFQNames="true">
+    <context />
   </template>
 </templateSet>
