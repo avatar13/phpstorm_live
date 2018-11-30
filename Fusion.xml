@@ -17,4 +17,17 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="icof" value="\fusion\helper\FHtml::link('&lt;i class=&quot;fa fa-$name$&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;', ['$ROUTE$'], ['title' =&gt; '$TITLE$'])" description="font awersome icon template" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="accessManagerf" value="// права доступа: только менеджеру&#10;Fn::ext()-&gt;access-&gt;checkManager();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
 </templateSet>

@@ -32,7 +32,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="y" value="Yii::$app-&gt;$END$" description="Yii::$app-&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="y" value="Yii::app()-&gt;$END$" description="Yii::app()-&gt;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -41,6 +41,22 @@
     <variable name="smth" expression="snakeCase(String)" defaultValue="" alwaysStopAt="true" />
     <variable name="smthb" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="smthf" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="t" value="Yii::t('main', $END$)" description="Yii::t" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP String Literal" value="true" />
+    </context>
+  </template>
+  <template name="fluentd" value="Yii::app()-&gt;AppLog-&gt;log(, [&#10;    &#10;]);" description="fluentd log" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="d" value="VarDumper::dump($END$, 10, true);die();" description="dump" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
