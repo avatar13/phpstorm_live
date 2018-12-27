@@ -1,0 +1,22 @@
+<templateSet group="PHP_YII_2">
+  <template name="trans" value="$transaction = Yii::$app-&gt;db-&gt;beginTransaction();&#10;try {&#10;    $END$&#10;    $transaction-&gt;commit();&#10;} catch (\Exception $e) {&#10;    $transaction-&gt;rollBack();&#10;}" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="query" value="Yii::$app-&gt;db-&gt;createCommand('$END$')-&gt;execute();" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="uid" value="Yii::$app-&gt;user-&gt;id" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="yout" value="Yii::$app-&gt;system-&gt;out($END$, 1);" description="" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

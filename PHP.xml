@@ -1,46 +1,10 @@
 <templateSet group="PHP">
-  <template name="query" value="Yii::$app-&gt;db-&gt;createCommand('$END$')-&gt;execute();" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="trans" value="$transaction = Yii::$app-&gt;db-&gt;beginTransaction();&#10;try {&#10;    $END$&#10;    $transaction-&gt;commit();&#10;} catch (\Exception $e) {&#10;    $transaction-&gt;rollBack();&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="uid" value="Yii::$app-&gt;user-&gt;id" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="getEntityList" value="public function $FUNC1$()&#10;{&#10;    return Yii::$app-&gt;db-&gt;createCommand('&#10;        SELECT COUNT(id)&#10;        FROM &quot;$TABLE$&quot;        &#10;    ', [        &#10;    ])-&gt;queryScalar();&#10;}&#10;&#10;public function $FUNC2$($pages)&#10;{&#10;    return Yii::$app-&gt;db-&gt;createCommand('&#10;        SELECT *&#10;        FROM &quot;$TABLE$&quot;        &#10;        LIMIT :limit OFFSET :offset&#10;    ', [        &#10;        ':limit' =&gt; $pages-&gt;limit,&#10;        ':offset' =&gt; $pages-&gt;offset&#10;    ])-&gt;queryAll(\PDO::FETCH_OBJ);&#10;}" toReformat="false" toShortenFQNames="true">
-    <variable name="FUNC1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="FUNC2" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
   <template name="jsontype" value="Yii::$app-&gt;response-&gt;format = Response::FORMAT_JSON;&#10;" description="Yii::$app-&gt;response-&gt;format = Response::FORMAT_JSON;" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
   <template name="errj" value="return Yii::$app-&gt;system-&gt;responseError('$END$');" description="return Yii::$app-&gt;system-&gt;responseError('');" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="y" value="Yii::app()-&gt;$END$" description="Yii::app()-&gt;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="getSmth" value="$smth$Data = Yii::$app-&gt;$smthb$-&gt;$smthf$($smth$Id);&#10;if (!$smth$Data)&#10;    return Yii::$app-&gt;system-&gt;redirect(Url::toRoute([]), );" toReformat="false" toShortenFQNames="true">
-    <variable name="smth" expression="snakeCase(String)" defaultValue="" alwaysStopAt="true" />
-    <variable name="smthb" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
-    <variable name="smthf" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
@@ -56,7 +20,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="d" value="VarDumper::dump($END$, 10, true);die();" description="dump" toReformat="false" toShortenFQNames="true">
+  <template name="d" value="\formbuilder\components\VarDumper::dump($END$, 10, true);die();" description="dump" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
